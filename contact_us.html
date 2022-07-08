@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <!-- Hero Service -->
+    <div class="contact-hero">
+      <header>
+        <a href="./index.html" class="logo">ACODE</a>
+        <div class="main-menu">
+          <nav class="nav">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact_us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <a href="./quote.html" class="btn">Request a quote</a>
+          <!-- Ham Menu -->
+          <div class="ham-menu" onclick="openMenu()" >
+            <span class="top"></span>
+            <span class="mid"></span>
+            <span class="bottom"></span>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- Contact Content -->
+    <div class="contact-content">
+      <!-- Contact Left  -->
+      <div class="contact-left">
+        <div class="contact-bg"></div>
+        <div class="contact-bg-cover"></div>
+      </div>
+
+      <!-- Content Right (Form) -->
+      <div class="contact-right">
+        <h2 class="heading">Contact Us</h2>
+        <form action="">
+          <input type="text" id="name" placeholder="First Name" />
+          <input type="text" id="last-Name" placeholder="Last Name" />
+          <input type="email" id="email" placeholder="Email" />
+          <input type="text" id="bussiness" placeholder="Bussiness" />
+          <textarea
+            name="msg"
+            id="msg"
+            placeholder="Message"
+            rows="5"
+          ></textarea>
+          <a class="btn">Submit</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h2>ACODE</h2>
+          <p>Columbia, SC</p>
+          <div class="socials">
+            <a href=""><img src="./icons/facebook.png" alt="" /></a>
+            <a href=""> <img src="./icons/twitter.png" alt="" /></a>
+            <a href=""><img src="./icons/instagram.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <p>
+        &copy; ACODE. All Rights Reserved. | Design and created by
+        <a href="https://antoniocaraballo.netlify.app/" target="_blank">Antonio Caraballo</a>
+      </p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
