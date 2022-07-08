@@ -245,12 +245,6 @@ header {
 .services-list p {
   font-size: 0.9rem;
   color: #676767;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   line-height: 2.5;
 }
 .services-list img {
@@ -519,9 +513,7 @@ footer a {
 }
 
 .service-features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(2, -webkit-max-content);
   grid-template-columns: repeat(2, max-content);
   gap: 80px;
@@ -709,7 +701,27 @@ footer a {
 
 @media only screen and (max-width: 1024px) {
   .body-lock {
-    overflow-Y: hidden;
+    overflow-y: hidden;
+  }
+
+  .web-design h5,
+.web-design h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .service-prices {
+    margin: auto;
+  }
+
+  .service-features {
+    grid-template-columns: 1fr;
+    gap: 0px;
   }
 
   .contact-left {
@@ -777,6 +789,9 @@ footer a {
   }
   .main-menu li a {
     font-size: 1.5rem;
+  }
+  .main-menu .btn {
+    display: none;
   }
   .main-menu .openMenu {
     right: 0%;
