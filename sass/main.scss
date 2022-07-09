@@ -477,8 +477,6 @@ footer {
 
   p {
     font-size: 0.9rem;
-    display: flex;
-    align-items: center;
     line-height: 2.5;
     color: var.$black;
     font-weight: 400;
@@ -686,14 +684,6 @@ footer {
   }
 
   // Services List
-
-  .web-design {
-    h5,
-    h2 {
-      text-align: center;
-      width: 100%;
-    }
-  }
 
   .services-list {
     grid-template-columns: 1fr;
